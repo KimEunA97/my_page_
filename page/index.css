@@ -21,3 +21,17 @@ body {
   display: flex;
   color: white;
 }
+
+.earthContainer {
+
+  width:  100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom,  rgb(0, 0, 71), rgb(0, 0, 100));
+
+}
+
+.earthBox {
+
+
+
+}

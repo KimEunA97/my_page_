@@ -14,7 +14,6 @@ function timeSetStars() {
 
   function setRandomPosition(element) {
     var position = getRandomPosition(element);
-    console.log(position);
     element.style.left = position[0] + 'px';
     element.style.top = position[1] + 'px';
   }
