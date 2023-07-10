@@ -1,3 +1,4 @@
+
 const root = document.getElementById('root')
 
 // const star = document.getElementsByClassName('star')
@@ -5,8 +6,8 @@ const root = document.getElementById('root')
 function timeSetStars() {
 
   function getRandomPosition() {
-    const maxX = document.body.offsetWidth;
-    const maxY = document.body.offsetHeight;
+    const maxX = document.body.clientWidth;
+    const maxY = document.body.clientHeight-200;
     let randomX = Math.floor(Math.random() * maxX);
     let randomY = Math.floor(Math.random() * maxY);
     return [randomX, randomY];
@@ -28,3 +29,7 @@ setInterval(() => {
 
 }, 5000);
 timeSetStars();
+
+window.addEventListener('scroll', function () {
+  console.log("scroll")
+})
