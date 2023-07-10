@@ -11,12 +11,13 @@ body {
   width: 100vw;
   height: 100vh;
   align-content: center;
-  background: linear-gradient( to bottom, black, rgb(0, 0, 72) );
+  background: linear-gradient(to bottom, black, rgb(0, 0, 72));
 
 
 }
 
 .star {
-
+  position: absolute;
+  display: flex;
   color: white;
 }
