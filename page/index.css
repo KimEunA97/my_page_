@@ -59,6 +59,7 @@ body {
   animation-duration: 4s;
   animation-iteration-count: infinite;
 
+  transition: width 1s ease;
 }
 
 @keyframes cloud {
@@ -77,8 +78,8 @@ body {
 
 .earthBoxAfterClick {
   position: fixed;
-  width: 1700px;
-  height: 100px;
+  width: 1200px;
+  height: 900px;
   background-color: blue;
   cursor: pointer;
 
@@ -86,29 +87,37 @@ body {
   z-index: 99;
 
   animation-name: clickEarth;
-  animation-duration: 4ms;
+  animation-duration: 2s;
+
   animation-iteration-count: 1;
+
 }
 
 @keyframes clickEarth {
 
+
   0% {
     width: 1700px;
+    height: 100px;
+
   }
 
   40% {
-    width: 1200px;
+    width: 1500px;
     height: 300px;
+
   }
 
   60% {
-    width: 900px;
-    height: 500px
+    width: 1300px;
+    height: 600px;
+
   }
 
   100% {
-    width: 700px;
-    height: 700px;
+    width: 1200px;
+    height: 900px;
+
 
   }
 
