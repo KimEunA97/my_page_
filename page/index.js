@@ -35,7 +35,6 @@ earthBox[0].addEventListener('click', () => {
   const blackup = document.getElementsByClassName('introduceBox');
   const myName = document.getElementsByClassName('myName');
 
-  console.dir(myName)
   setTimeout(() => {
 
     for (let i = 0; i < myName.length; i++) {
@@ -45,7 +44,6 @@ earthBox[0].addEventListener('click', () => {
 
       myName[i].style.display = "flex";
       myName[i].style.opacity = "0";
-      console.log(i)
       setTimeout(() => {
         myName[i].style.opacity = "1";
   
