@@ -78,9 +78,9 @@ body {
 
 .earthBoxAfterClick {
   position: fixed;
-  width: 1200px;
+  width: 1300px;
   height: 900px;
-  background-color: blue;
+  background-color: rgb(0, 160, 189);
   cursor: pointer;
 
   border-radius: 50%;
@@ -109,13 +109,13 @@ body {
   }
 
   60% {
-    width: 1300px;
+    width: 1400px;
     height: 600px;
 
   }
 
   100% {
-    width: 1200px;
+    width: 1300px;
     height: 900px;
 
 
