@@ -32,6 +32,7 @@ timeSetStars();
 
 earthBox[0].addEventListener('click', () => {
   earthBox[0].classList.add('earthBoxAfterClick')
+  earthBox[0].style.cursor = "auto"
   const blackup = document.getElementsByClassName('introduceBox');
   const myName = document.getElementsByClassName('myName');
 
