@@ -23,9 +23,11 @@ body {
   0% {
     opacity: 0%;
   }
+
   50% {
     opacity: 100%;
   }
+
   100% {
     opacity: 0%;
   }
@@ -59,6 +61,23 @@ body {
 
 }
 
+/* .earthBoxAfterClick {
+  position: fixed;
+  width: 1700px;
+  height: 100px;
+  background-color: rgb(0, 160, 189);
+  cursor: pointer;
+
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+  margin: -10px;
+  z-index: 99;
+
+  animation-name: clickEarth;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+} */
+
 @keyframes cloud {
   0% {
     bottom: 10px;
@@ -73,18 +92,29 @@ body {
   }
 }
 
-@keyframes rapidScroll {
+@keyframes clickEarth {
 
   0% {
-    top: 10px
+    top: 10px;
+    width: 1700px;
   }
 
-  50% {
-    top: 0px
+  40% {
+    top: 30px;
+    width: 1200px;
+    height: 300px;
+  }
+
+  60% {
+    width: 900px;
+    height: 500px
+
   }
 
   100% {
-    top: 10px
+    width: 700px;
+    height: 700px;
+
   }
 
 }

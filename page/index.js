@@ -42,7 +42,8 @@ earthBox[0].addEventListener('click', () => {
   const animation = document.styleSheets[0].cssRules[4];
 
   function setRapidScroll() {
-    animation.style.animationName = "rapidScroll"
+    animation.style.animationName = "clickEarth"
   }
+  setRapidScroll(); 
 
 })
