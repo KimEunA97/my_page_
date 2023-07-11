@@ -51,7 +51,7 @@ body {
   background-color: rgb(0, 160, 189);
   cursor: pointer;
 
-  border: 7px white dashed;
+  border: 7px white groove;
   border-top-left-radius: 70%;
   border-top-right-radius: 70%;
   margin: -30px;
@@ -139,7 +139,7 @@ body {
   width: 80%;
   height: 30%;
   bottom: 100px;
-  border-radius: 30px;
+  border-radius: 150px;
 
 }
 
@@ -151,7 +151,8 @@ body {
   align-items: center;
   justify-content: space-around;
   background-color: rgb(255, 211, 153);
-  border-radius: 30px;
+  border-radius: 150px;
+
 
 
 }
