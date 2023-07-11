@@ -172,6 +172,7 @@ body {
 }
 
 .myName {
+  display: none;
   text-align: center;
   align-items: center;
   position: relative;
