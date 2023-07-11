@@ -54,7 +54,7 @@ body {
   border: 7px white dashed;
   border-top-left-radius: 70%;
   border-top-right-radius: 70%;
-  margin: -10px;
+  margin: -30px;
   z-index: 99;
 
   animation-name: cloud;
