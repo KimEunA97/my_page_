@@ -46,7 +46,7 @@ earthBox[0].addEventListener('click', () => {
       myName[i].style.opacity = "0";
       setTimeout(() => {
         myName[i].style.opacity = "1";
-  
+
       }, 1000)
     }
 
@@ -69,4 +69,10 @@ earthBox[0].addEventListener('click', () => {
 
 function openWeb(url) {
   window.open(url)
+}
+
+function clipboard() {
+
+  window.navigator.clipboard.writeText('kimeuna9712@gmail.com').then(() => { alert('email copy!') })
+
 }
