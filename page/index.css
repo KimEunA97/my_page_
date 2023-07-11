@@ -45,6 +45,8 @@ body {
 
 .earthBox {
   position: fixed;
+  flex-direction: column;
+
   width: 1700px;
   height: 100px;
   background-color: rgb(0, 160, 189);
@@ -78,6 +80,10 @@ body {
 
 .earthBoxAfterClick {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 1300px;
   height: 900px;
   background-color: rgb(0, 160, 189);
@@ -121,4 +127,50 @@ body {
 
   }
 
+}
+
+.introduceBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: green;
+  width: 80%;
+  height: 30%;
+  bottom: 100px;
+  border-radius: 30px;
+
+}
+
+.introduceMe {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(255, 211, 153);
+  border-radius: 30px;
+
+
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
+
+.white {
+  background-color: white;
+  border-radius: 50%;
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.myName {
+  text-align: center;
+  justify-content: center;
+  bottom: 100px;
 }

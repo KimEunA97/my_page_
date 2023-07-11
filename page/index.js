@@ -1,7 +1,6 @@
 const root = document.getElementById('root')
 const star = document.getElementsByClassName('star')
 const earthBox = document.getElementsByClassName('earthBox')
-console.dir(earthBox[0])
 
 //5초마다 별 위치 바뀜
 function timeSetStars() {
@@ -45,3 +44,7 @@ earthBox[0].addEventListener('click', () => {
 
   // console.log(earthBox[0].classList)
 })
+
+function openWeb(url) {
+  window.open(url)
+}
