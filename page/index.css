@@ -61,23 +61,6 @@ body {
 
 }
 
-/* .earthBoxAfterClick {
-  position: fixed;
-  width: 1700px;
-  height: 100px;
-  background-color: rgb(0, 160, 189);
-  cursor: pointer;
-
-  border-top-left-radius: 70%;
-  border-top-right-radius: 70%;
-  margin: -10px;
-  z-index: 99;
-
-  animation-name: clickEarth;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-} */
-
 @keyframes cloud {
   0% {
     bottom: 10px;
@@ -92,15 +75,28 @@ body {
   }
 }
 
+.earthBoxAfterClick {
+  position: fixed;
+  width: 1700px;
+  height: 100px;
+  background-color: blue;
+  cursor: pointer;
+
+  border-radius: 50%;
+  z-index: 99;
+
+  animation-name: clickEarth;
+  animation-duration: 4ms;
+  animation-iteration-count: 1;
+}
+
 @keyframes clickEarth {
 
   0% {
-    top: 10px;
     width: 1700px;
   }
 
   40% {
-    top: 30px;
     width: 1200px;
     height: 300px;
   }
@@ -108,7 +104,6 @@ body {
   60% {
     width: 900px;
     height: 500px
-
   }
 
   100% {

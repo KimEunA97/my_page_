@@ -1,7 +1,7 @@
 const root = document.getElementById('root')
 const star = document.getElementsByClassName('star')
 const earthBox = document.getElementsByClassName('earthBox')
-console.dir(earthBox)
+console.dir(earthBox[0].classList)
 
 //5초마다 별 위치 바뀜
 function timeSetStars() {
@@ -37,13 +37,10 @@ timeSetStars();
 // })
 
 earthBox[0].addEventListener('click', () => {
-  console.log("click!")
-  console.dir(document.styleSheets[0].cssRules[4])
-  const animation = document.styleSheets[0].cssRules[4];
+  // console.log("click!")
+  // console.dir(earthBox[0].style)
+  // const animation = document.styleSheets[0].cssRules[4];
 
-  function setRapidScroll() {
-    animation.style.animationName = "clickEarth"
-  }
-  setRapidScroll(); 
-
+  earthBox[0].classList.replace('earthBox', 'earthBoxAfterClick')
+  console.log(earthBox[0].classList)
 })
