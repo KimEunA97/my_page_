@@ -62,7 +62,7 @@ earthBox[0].addEventListener('click', () => {
       blackup[0].style.opacity = "1";
 
     }, 1000);
-  }, 2000)
+  }, 1000)
 
 
 })
