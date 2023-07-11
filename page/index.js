@@ -1,4 +1,3 @@
-
 const root = document.getElementById('root')
 const star = document.getElementsByClassName('star')
 const earthBox = document.getElementsByClassName('earthBox')
