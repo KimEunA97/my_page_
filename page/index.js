@@ -35,28 +35,36 @@ earthBox[0].addEventListener('click', () => {
   const blackup = document.getElementsByClassName('introduceBox');
   const myName = document.getElementsByClassName('myName');
 
+  console.dir(myName)
   setTimeout(() => {
-    myName[0].style.transitionTimingFunction = "ease";
-    myName[0].style.transitionDuration = "1s";
-    myName[0].style.transitionDelay = "1s";
 
-    myName[0].style.display = "flex";
-    myName[0].style.opacity = "0";
+    for (let i = 0; i < myName.length; i++) {
+      myName[i].style.transitionTimingFunction = "ease";
+      myName[i].style.transitionDuration = "1s";
+      myName[i].style.transitionDelay = "1s";
+
+      myName[i].style.display = "flex";
+      myName[i].style.opacity = "0";
+      console.log(i)
+      setTimeout(() => {
+        myName[i].style.opacity = "1";
+  
+      }, 1000)
+    }
 
 
     blackup[0].style.transitionTimingFunction = "ease";
-    blackup[0].style.transitionDuration = "1s";
-    blackup[0].style.transitionDelay = "1s";
+    blackup[0].style.transitionDuration = "2s";
+    blackup[0].style.transitionDelay = "2s";
 
     blackup[0].style.display = "flex";
     blackup[0].style.opacity = "0";
 
     setTimeout(() => {
       blackup[0].style.opacity = "1";
-      myName[0].style.opacity = "1";
 
     }, 1000);
-  }, 3000)
+  }, 2000)
 
 
 })
