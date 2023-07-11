@@ -34,7 +34,6 @@ body {
 }
 
 .earthContainer {
-  width: 100vw;
   background: linear-gradient(to bottom, rgb(0, 0, 71), rgb(0, 0, 100));
 
   display: flex;
