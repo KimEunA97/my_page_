@@ -30,19 +30,14 @@ setInterval(() => {
 }, 5000);
 timeSetStars();
 
-
-// window.addEventListener('scroll', function () {
-//   console.log("scroll")
-// })
-
 earthBox[0].addEventListener('click', () => {
-  // console.log("click!")
-  // console.dir(earthBox[0].style)
-  // const animation = document.styleSheets[0].cssRules[4];
-  // earthBox[0].classList.replace('earthBox', 'earthBoxAfterClick')
   earthBox[0].classList.add('earthBoxAfterClick')
+  const blackup = document.getElementsByClassName('introduceBox');
 
-  // console.log(earthBox[0].classList)
+  setTimeout(()=> {
+    blackup[0].style.display = "flex"
+  },3000)
+
 })
 
 function openWeb(url) {
