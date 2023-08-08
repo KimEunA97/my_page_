@@ -1,48 +1,39 @@
-// Generated using webpack-cli https://github.com/webpack/webpack-cli
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const isProduction = process.env.NODE_ENV == 'production';
-
-
-const config = {
-    entry: './page/index.html',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-    },
-    devServer: {
-        open: true,
-        host: 'localhost',
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: 'index.html',
-        }),
-
-        // Add your plugins here
-        // Learn more about plugins from https://webpack.js.org/configuration/plugins/
-    ],
-    module: {
-        rules: [
-            {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                type: 'asset',
-            },
-
-            // Add your rules for custom modules here
-            // Learn more about loaders from https://webpack.js.org/loaders/
+module.exports = {
+  entry: {
+    main: './page/main.js', // JS 진입점 파일 경로
+  },
+  output: {
+    filename: 'bundle.js', // 번들 파일 이름
+    path: path.resolve(__dirname, 'dist'), // 번들 파일 출력 경로
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader', // JavaScript 파일을 번들링할 때 사용할 로더
+        },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader', // CSS 파일을 번들링할 때 사용할 로더
         ],
-    },
-};
-
-module.exports = () => {
-    if (isProduction) {
-        config.mode = 'production';
-        
-        
-    } else {
-        config.mode = 'development';
-    }
-    return config;
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './page/index.html', // HTML 템플릿 파일 경로
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'styles.css', // 추출된 CSS 파일 이름
+    }),
+  ],
 };
