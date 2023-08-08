@@ -1,69 +1,139 @@
-<head><script defer src="main.js"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'C:\Users\deadl\Desktop\my_page_\index.html' in 'C:\Users\deadl\Desktop\my_page_'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'C:\Users\deadl\Desktop\my_page_\index.html' in 'C:\Users\deadl\Desktop\my_page_'
-      at C:\Users\deadl\Desktop\my_page_\node_modules\webpack\lib\Compilation.js:2022:28
-      at C:\Users\deadl\Desktop\my_page_\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (C:\Users\deadl\Desktop\my_page_\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at C:\Users\deadl\Desktop\my_page_\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (C:\Users\deadl\Desktop\my_page_\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at C:\Users\deadl\Desktop\my_page_\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at C:\Users\deadl\Desktop\my_page_\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at C:\Users\deadl\Desktop\my_page_\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at C:\Users\deadl\Desktop\my_page_\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at C:\Users\deadl\Desktop\my_page_\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  
-  - Compilation.js:2022 
-    [my_page_]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [my_page_]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [my_page_]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:448 
-    [my_page_]/[webpack]/lib/NormalModuleFactory.js:448:22
-  
-  - NormalModuleFactory.js:118 
-    [my_page_]/[webpack]/lib/NormalModuleFactory.js:118:11
-  
-  - NormalModuleFactory.js:689 
-    [my_page_]/[webpack]/lib/NormalModuleFactory.js:689:25
-  
-  - NormalModuleFactory.js:893 
-    [my_page_]/[webpack]/lib/NormalModuleFactory.js:893:8
-  
-  - NormalModuleFactory.js:1013 
-    [my_page_]/[webpack]/lib/NormalModuleFactory.js:1013:5
-  
-  - child-compiler.js:169 
-    [my_page_]/[html-webpack-plugin]/lib/child-compiler.js:169:18
-  
-  - Compiler.js:551 finalCallback
-    [my_page_]/[webpack]/lib/Compiler.js:551:5
-  
-  - Compiler.js:577 
-    [my_page_]/[webpack]/lib/Compiler.js:577:11
-  
-  - Compiler.js:1200 
-    [my_page_]/[webpack]/lib/Compiler.js:1200:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [my_page_]/[tapable]/lib/Hook.js:18:14
-  
-  - Compiler.js:1196 
-    [my_page_]/[webpack]/lib/Compiler.js:1196:33
-  
-  - Compilation.js:2795 finalCallback
-    [my_page_]/[webpack]/lib/Compilation.js:2795:11
-  
-  - Compilation.js:3100 
-    [my_page_]/[webpack]/lib/Compilation.js:3100:11
-  
-  
-</pre>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome To My SPACE!</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./index.css">
+
+
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/10.0.0/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/10.0.0/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/10.0.0/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/10.0.0/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/10.0.0/firebase-functions-compat.js"></script>
+  <script defer src="/__/firebase/10.0.0/firebase-messaging-compat.js"></script>
+  <script defer src="/__/firebase/10.0.0/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/10.0.0/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/10.0.0/firebase-remote-config-compat.js"></script>
+  <script defer src="/__/firebase/10.0.0/firebase-performance-compat.js"></script>
+  <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+
+<script defer src="bundle.js"></script></head>
+
+<body>
+
+
+  <div id="root">
+    <div class="allContainer">
+      <div class="myName align fontmiddle">개발자</div>
+      <div class="myName align fontlarge">김은아</div>
+      <div class="myName align fontmiddle">입니다.</div>
+
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+      <div class="star">*</div>
+    </div>
+    <div class="earthContainer">
+      <div class="earthBox">
+        <div class="introduceBox">
+          <div class="introduceMe">
+            <div class="gitHub white">
+              <img class="img" alt="gitHub" src="./img/githubicon.png"
+                onclick="openWeb('https://github.com/KimEunA97')">
+            </div>
+            <div class="email white">
+              <img class="img emailadress" alt="gmail" src="./img/gmail.png" onclick="clipboard()">
+            </div>
+            <div class="email white">
+              <img class="img" alt="PillGood"
+                src="./img/pillgood.png"
+                onclick="openWeb('https://github.com/KimEunA97/PillGood')">
+              <div></div>
+            </div>
+            <div class="email white">
+              <img class="img" alt="비상GO" src="./img/bisanggo.png"
+                onclick="openWeb('https://github.com/jiny43/Project-k-digitalHackathon')">
+              <div></div>
+            </div>
+            <div class="email white">
+              <img class="img" alt="BTS"
+                src="./img/btslogo.png"
+                onclick="openWeb('https://github.com/KimEunA97/KDT-2-Project-B-4')">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const loadEl = document.querySelector('#load');
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.firestore().doc('/foo/bar').get().then(() => { });
+      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      // firebase.analytics(); // call to activate
+      // firebase.analytics().logEvent('tutorial_completed');
+      // firebase.performance(); // call to activate
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = [
+          'auth',
+          'database',
+          'firestore',
+          'functions',
+          'messaging',
+          'storage',
+          'analytics',
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+
+<!-- 첫페이지에서 지구 둥둥 뜨기 : 스크롤 유도  -->
+<!-- 스크롤 더 내리면 우주로 나간거 -->

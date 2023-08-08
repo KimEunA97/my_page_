@@ -4,14 +4,19 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    main: './page/main.js', // JS 진입점 파일 경로
+    main: './page/index.html', // JS 진입점 파일 경로
   },
   output: {
     filename: 'bundle.js', // 번들 파일 이름
     path: path.resolve(__dirname, 'dist'), // 번들 파일 출력 경로
   },
+  mode: 'production',
   module: {
     rules: [
+      {
+        test: /\.html$/,
+        loader: 'html-loader', // HTML 파일을 로드하도록 설정
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
